@@ -48,4 +48,11 @@ const apikey = "915e7a7dd92575301bc7865dcde33549";
     
     searchBtn.addEventListener("click", ()=>{
         check(searchBox.value);
+        
+    })
+
+    searchBox.addEventListener("keyup",(e)=>{
+        if(e.keyCode===13){
+            check(searchBox.value);
+        }
     })
